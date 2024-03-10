@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>LEAF</title>
+	<link rel="shortcut icon" href="../home.png" type="image/x-icon">
+	<link rel="stylesheet" href="css/product.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body id="pro">
+	<header>
+		<i class="fa-solid fa-leaf"></i>
+		<input type="checkbox" name="" id="chk1">
+		<div class="logoc">
+			<h1>LEAF</h1>
+		</div>
+		<div class="search-box">
+			<form action="">
+				<input type="text" name="search" id="srch" placeholder="search">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</form>
+		</div>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="product.html">Product</a></li>
+			<li><a href="aboutus.html">About</a></li>
+			<li><a href="contactus.html">Contact</a></li>
+			<li>
+				<a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+				<a href="https://twitter.com/i/flow/login"><i class="fa-brands fa-twitter"></i></a>
+				<a href="https://in.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+				<a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+			</li>
+		</ul>
+		<div class="menu">
+			<label id="chk1">
+				<i class="fa fa-bars"></i>
+			</label>
+		</div>
+	</header>
+	<div class="pro-container">
+		<div class="testimonial">
+			<div class="testimonial-text">
+				<div class="product-text ">
+					<i class="fas fa-quote-left"></i>
+					<p>
+						Had the chance to visit the nursery today! Loved the collection of indoor plants
+						and seriously was confused to pick. They were really helpful to make the right choice !! <br>
+						(Genuine price) You can even compare other places before buying them <br>
+						They have many varieties of flowering plants. Hibiscus is just 15Rs here.
+					</p>
+					<span>P L A N T S <b>IN</b></span>
+				</div>
+				<div class="product-text active-text">
+					<i class="fas fa-quote-left" style="margin-bottom: 50px;"></i>
+					<p>
+						When compared to other brands of honey on the market, our pure honey is of superior quality
+						and is more reasonably priced. Its strong antiseptic properties help injuries heal more quickly.
+						It works well to purify blood. Also, it helps with fever, cough and and cold.
+						This honey is produced with the highest quality components sourced from the best suppliers. The
+						honey has
+						a distinct flavour and is ideal for baking and cooking, as well as serving as a general
+						all-purpose sweetener.
+					</p>
+					<span style="margin-top: 50px;"><b>H O N E Y</b></span>
+				</div>
+				<div class="product-text">
+					<i class="fas fa-quote-left"></i>
+					<p style="position: relative;">
+						Country eggs are a perfect way to give your morning a protein-packed start and maintain energy
+						levels through the day.
+						Free-roaming hens in the backyard of Akshayakalpa farms feeding on organic food are raised with
+						great care to bring you eggs
+						free from antibiotics and growth hormones, that are non-GMO and full of natural nutrition! The
+						hens live in a stress-free
+						environment with ample space to roam and to manifest their natural behaviour of exploring,
+						foraging for insects and sun-bathing– resulting in healthy, nutritious eggs.
+					</p>
+					<span style="padding-bottom: 20px;">Contry eggs</span>
+				</div>
+				<div class="product-text">
+					<i class="fas fa-quote-left"></i>
+					<p>
+						We collect Merino wool from the finest sheep in the world.The wool is very soft and has
+						excellent felting properties.
+						Although there are more than 200 breeds of sheep in the world today, not all produce wool
+						ideally suitable for knitting.
+						marino sheep breeds have been developed and selected for wool by breeders, spinners and fibre
+						artists.
+					</p>
+					<span>W H O O L </span>
+				</div>
+			</div>
+			<div class="testimonial-pic">
+				<img src="./agri/far221.jpg" class="product-pic" onclick="showReview()">
+				<img src="./agri/far44.jfif" class="product-pic active-pic" onclick="showReview()">
+				<img src="./agri/far233.jpg" class="product-pic" onclick="showReview()">
+				<img src="./agri/far4.jpg" class="product-pic" onclick="showReview()">
+			</div>
+		</div>
+	</div>
+	<script>
+		let productTexts = document.getElementsByClassName("product-text");
+		let productPics = document.getElementsByClassName("product-pic");
+
+		function showReview() {
+			for (productPic of productPics) {
+				productPic.classList.remove("active-pic");
+			}
+			for (productText of productTexts) {
+				productText.classList.remove("active-text");
+			}
+			let i = Array.from(productPics).indexOf(event.target);
+
+			productPics[i].classList.add("active-pic");
+			productTexts[i].classList.add("active-text");
+		}
+		function proalert() {
+			alert("We grow natural with the help of Farmers at a fair price and sell them to you at an affordable cost");
+		}
+	</script>
+	<footer>
+		<div class="rowaz">
+			<div class="colaz">
+				<i class="fa-solid fa-leaf" style="height: 0px;width: 0px;"></i>
+				<h1>LEAF</h1><br>
+				<p>Organic Agriculture combines tradition, innovation, and science to benefit the shared environment and
+					promote fair relationships and good quality of life for all involved.
+				</p>
+
+			</div>
+			<div class="colaz">
+				<h3 id="ac">office <div class="underline"><span></span></div>
+				</h3>
+				<p>north street, thirubuvanam</p>
+				<p>tamilnadu,india PIN 612103</p>
+				<p class="email-id">chinna96@gmail.com</p>
+				<h4>+91 9876543210</h4>
+			</div>
+			<div class="colaz">
+				<h3 id="ac">links<div class="underline"><span></span></div>
+				</h3>
+				<ul>
+					<li><a href="index.html">home</a></li>
+					<li><a href="product.html">product</a></li>
+					<li><a href="aboutus.html">about us</a></li>
+					<li><a href="contactus.html">contact us</a></li>
+					<li><a href="comingsoon.html">return</a></li>
+
+				</ul>
+			</div>
+			<div class="colaz">
+				<h3 id="ac">News Letter<div class="underline"><span></span></div>
+				</h3>
+				<form>
+					<i class="fa-regular fa-envelope"></i>
+					<input type="email" placeholder="Enter Your email-id" required>
+					<button type="submit"><i class="fa-solid fa-arrow-right"></i></button>
+				</form>
+				<div class="social-icons">
+					<a href="https://www.instagram.com/elonmuskxspac?igsh=N3psdnJjc3R6b25x" target="_blank"><i
+							class="fa-brands fa-facebook"></i></a>
+					<a href="https://twitter.com/elonmusk" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+					<a href="https://www.linkedin.com/groups/7022690/" target="_blank"><i
+							class="fa-brands fa-linkedin"></i></a>
+					<a href="https://www.instagram.com/elonmuskxspac?igsh=N3psdnJjc3R6b25x" target="_blank"><i
+							class="fa-brands fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+		<hr id="har">
+		<p class="Copyrightaa"><span>First website © 2024|LEAF| All Rights Reserved</span> </p>
+	</footer>
+</body>
+
+</html>
